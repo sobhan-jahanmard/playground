@@ -6,7 +6,7 @@ config:
 
 scenarios:
   - flow:
-      - get:
+      - post:
           url: "/api/packages/list"
           qs:
             limit: 10
@@ -19,10 +19,7 @@ scenarios:
             accept-language: "en-US,en;q=0.9,ja;q=0.8,fa;q=0.7"
             baggage: "sentry-environment=production,sentry-release=1D8vSJS0p5OgpRO1wT1Dj,sentry-public_key=7e9989b8bdd946447e771f38703ba903,sentry-trace_id=303c7d00a5c36cc92100f9696c22fbd1,sentry-sample_rate=1,sentry-transaction=GET%20%2F,sentry-sampled=true"
             content-type: "application/json"
-            cookie: "payload-theme=light; _ga=GA1.1.1377306175.1733244157; _ga_VWQ1NF62B3=GS1.1.1735557915.29.1.1735558243.0.0.0; _ga_2BFFEJYX8N=GS1.1.1735557915.8.1.1735558243.0.0.0; _ga_0T0M4WXDNN=GS1.1.1735625856.21.1.1735625868.0.0.0; payload-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGU4ZmI2M2MxNGMwM2Q1N2ZlNjA2MCIsImNvbGxlY3Rpb24iOiJ1c2VycyIsImVtYWlsIjoicy5qYWhhbm1hcmRAZ21haWwuY29tIiwiaWF0IjoxNzM1NjI5NjI5LCJleHAiOjE3MzU2MzY4Mjl9.pN-bsibCATLlSXMpcdCLS4iIt2aqJ3vlS6uZgT1b5QY"
-            origin: "https://test-cms-prod.trtglobal.io"
             priority: "u=1, i"
-            referer: "https://test-cms-prod.trtglobal.io/"
             sec-ch-prefers-color-scheme: "dark"
             sec-ch-ua: '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"'
             sec-ch-ua-mobile: "?0"
@@ -31,4 +28,7 @@ scenarios:
             sec-fetch-mode: "cors"
             sec-fetch-site: "same-origin"
             sentry-trace: "303c7d00a5c36cc92100f9696c22fbd1-b1ba3e55e94e7301-1"
-            user-agent: "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            cookie: "payload-theme=light; _ga=GA1.1.1377306175.1733244157; _ga_VWQ1NF62B3=GS1.1.1735557915.29.1.1735558243.0.0.0; _ga_2BFFEJYX8N=GS1.1.1735557915.8.1.1735558243.0.0.0; _ga_0T0M4WXDNN=GS1.1.1735625856.21.1.1735625868.0.0.0; payload-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2OGU4ZmI2M2MxNGMwM2Q1N2ZlNjA2MCIsImNvbGxlY3Rpb24iOiJ1c2VycyIsImVtYWlsIjoicy5qYWhhbm1hcmRAZ21haWwuY29tIiwiaWF0IjoxNzM1NjI5NjI5LCJleHAiOjE3MzU2MzY4Mjl9.pN-bsibCATLlSXMpcdCLS4iIt2aqJ3vlS6uZgT1b5QY"
+            referer: "https://test-cms-prod.trtglobal.io/"
+            referrer-policy: "strict-origin-when-cross-origin"
+          body: "{}"
